@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZSDSAPUI5'
+define service ZSDSAPUI5 {
+  expose ZCDSSAPUI5;
+}

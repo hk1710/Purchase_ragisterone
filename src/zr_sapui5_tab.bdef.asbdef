@@ -1,0 +1,29 @@
+managed implementation in class ZBP_R_SAPUI5_TAB unique;
+strict ( 2 );
+define behavior for ZR_SAPUI5_TAB alias ZrSapui5Tab
+persistent table ZSAPUI5_TAB
+lock master
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   Id,
+   Name;
+
+  field ( readonly : update )
+   Id,
+   Name;
+
+
+  create;
+  update;
+  delete;
+
+  mapping for ZSAPUI5_TAB
+  {
+    Id = id;
+    Name = name;
+    Father = father;
+    Mother = mother;
+  }
+}
